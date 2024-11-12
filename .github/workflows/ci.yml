@@ -43,15 +43,15 @@ jobs:
           distribution: temurin
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@8214744c546c1e5c8f03dde8fab3a7353211988d # v3.26.7
+        uses: github/codeql-action/init@9278e421667d5d90a2839487a482448c4ec7df4d # v3.27.2
         with:
           languages: java
 
       - name: Autobuild
-        uses: github/codeql-action/autobuild@8214744c546c1e5c8f03dde8fab3a7353211988d # v3.26.7
+        uses: github/codeql-action/autobuild@9278e421667d5d90a2839487a482448c4ec7df4d # v3.27.2
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@8214744c546c1e5c8f03dde8fab3a7353211988d # v3.26.7
+        uses: github/codeql-action/analyze@9278e421667d5d90a2839487a482448c4ec7df4d # v3.27.2
         with:
           category: "/language:java"
 
